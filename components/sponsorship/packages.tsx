@@ -151,7 +151,7 @@ function FeatureValue({ value }: { value: boolean | string }) {
 }
 
 export function SponsorshipPackages() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
   const sectionRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -543,7 +543,7 @@ export function SponsorshipPackages() {
           style={{ transitionDelay: "200ms" }}
         >
           <Image
-            src="/images/ChatGPT Image 28 janv. 2026, 02_15_22.png"
+            src="/images/chatgpt-event-info.png"
             alt="Event Information"
             width={1200}
             height={600}

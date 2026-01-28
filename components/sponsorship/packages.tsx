@@ -52,6 +52,7 @@ const packages = [
   {
     name: "Pack Bronze Winner",
     price: "3900",
+    prizePrice: "500",
     highlight: false,
     note: null,
     prizeIncluded: "500 TND",
@@ -74,7 +75,8 @@ const packages = [
   },
   {
     name: "Pack Silver Winner",
-    price: "4800",
+    price: "4700",
+    prizePrice: "1000",
     highlight: false,
     note: null,
     prizeIncluded: "1,000 TND",
@@ -101,6 +103,7 @@ const packages = [
     name: "Pack Gold Winner",
     subtitle: "Statut exclusif de Challenge Owner",
     price: "8900",
+    prizePrice: "5000",
     highlight: true,
     note: null,
     prizeIncluded: "5,000 TND",
@@ -181,7 +184,7 @@ export function SponsorshipPackages() {
               style={{ transitionDelay: "0ms" }}
             >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Digital Presence</h3>
-              <p className="mb-4 text-2xl font-bold text-green-600">5,000 TND HT</p>
+              <p className="mb-4 text-2xl font-bold text-green-600">5,000 TND<span className="text-sm"> HT</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
                 <li className="flex gap-2">
                   <span className="text-green-600">✓</span>
@@ -214,7 +217,7 @@ export function SponsorshipPackages() {
               style={{ transitionDelay: "100ms" }}
             >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack IHEC Connect</h3>
-              <p className="mb-4 text-2xl font-bold text-green-600">1,800 TND HT</p>
+              <p className="mb-4 text-2xl font-bold text-green-600">1,800 TND<span className="text-sm"> HT</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
                 <li className="flex gap-2">
                   <span className="text-green-600">✓</span>
@@ -243,7 +246,7 @@ export function SponsorshipPackages() {
               style={{ transitionDelay: "200ms" }}
             >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Bronze Winner</h3>
-              <p className="mb-4 text-2xl font-bold text-green-600">3,900 TND HT</p>
+              <p className="mb-4"><span className="text-2xl font-bold text-green-600">3,900 TND</span><span className="text-sm text-green-600"> HT</span><span className="ml-2 text-2xl font-bold text-green-600">+ 500 TND</span><span className="text-sm text-gray-medium"> (prize pool)</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
                 <li className="flex gap-2">
                   <span className="text-green-600">✓</span>
@@ -276,7 +279,7 @@ export function SponsorshipPackages() {
               style={{ transitionDelay: "300ms" }}
             >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Silver Winner</h3>
-              <p className="mb-4 text-2xl font-bold text-green-600">4,700 TND HT</p>
+              <p className="mb-4"><span className="text-2xl font-bold text-green-600">4,700 TND</span><span className="text-sm text-green-600"> HT</span><span className="ml-2 text-2xl font-bold text-green-600">+ 1,000 TND</span><span className="text-sm text-gray-medium"> (prize pool)</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
                 <li className="flex gap-2">
                   <span className="text-green-600">✓</span>
@@ -313,7 +316,8 @@ export function SponsorshipPackages() {
               <div>
                 <h3 className="mb-2 text-2xl font-bold">Pack Gold Winner</h3>
                 <p className="mb-4 text-xl font-semibold text-[#00C9FF]">Statut exclusif de Challenge Owner</p>
-                <p className="text-4xl font-bold">8,900 TND HT</p>
+              <p className="mb-2"><span className="text-4xl font-bold">8,900 TND</span><span className="ml-2 text-lg text-off-white/80">HT</span></p>
+              <p className="text-2xl font-bold text-[#00C9FF]">+ 5,000 TND<span className="text-sm text-off-white/70 ml-1">(prize pool)</span></p>
               </div>
               <ul className="space-y-2 text-sm text-off-white/90">
                 <li className="flex gap-2">
@@ -409,7 +413,7 @@ export function SponsorshipPackages() {
                 <span className={`text-3xl font-bold sm:text-4xl ${pkg.highlight ? "text-white" : "text-charcoal"}`}>
                   {pkg.price}
                 </span>
-                <span className={`ml-1 text-sm sm:text-base ${pkg.highlight ? "text-white/80" : "text-gray-medium"}`}>TND</span>
+                <span className={`ml-1 text-sm sm:text-base ${pkg.highlight ? "text-white/80" : "text-gray-medium"}`}>TND HT</span>
               </div>
 
               {pkg.note && (
@@ -418,7 +422,13 @@ export function SponsorshipPackages() {
                 </p>
               )}
 
-              {pkg.prizeIncluded && (
+              {pkg.prizePrice && (
+                <p className={`mt-2 text-sm font-semibold ${pkg.highlight ? "text-[#00C9FF]" : "text-green-600"}`}>
+                  + {pkg.prizePrice} TND (prize pool)
+                </p>
+              )}
+
+              {pkg.prizeIncluded && !pkg.prizePrice && (
                 <p className="mt-2 text-sm text-green-600">
                   Includes {pkg.prizeIncluded} Winner Prize
                 </p>
@@ -474,8 +484,16 @@ export function SponsorshipPackages() {
                           <span className={`text-2xl font-bold ${pkg.highlight ? "text-white" : "text-charcoal"}`}>
                             {pkg.price}
                           </span>
-                          <span className={`ml-1 text-sm ${pkg.highlight ? "text-white/80" : "text-gray-medium"}`}>TND</span>
+                          <span className={`ml-1 text-sm ${pkg.highlight ? "text-white/80" : "text-gray-medium"}`}>TND HT</span>
                         </div>
+                        {pkg.prizePrice && (
+                          <div className="mt-2">
+                            <span className={`text-lg font-bold ${pkg.highlight ? "text-[#00C9FF]" : "text-green-600"}`}>
+                              + {pkg.prizePrice} TND
+                            </span>
+                            <p className={`text-xs ${pkg.highlight ? "text-white/60" : "text-gray-medium"}`}>(prize pool)</p>
+                          </div>
+                        )}
                         {pkg.note && (
                           <span className={`mt-1 text-xs ${pkg.highlight ? "text-white/70" : "text-gray-medium"}`}>
                             {pkg.note}

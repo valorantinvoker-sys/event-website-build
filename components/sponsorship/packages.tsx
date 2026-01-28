@@ -185,7 +185,7 @@ export function SponsorshipPackages() {
               style={{ transitionDelay: "0ms" }}
             >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Digital Presence</h3>
-              <p className="mb-4 text-2xl font-bold text-green-600">5,000 TND<span className="text-sm"> HT</span></p>
+              <p className="mb-4 text-2xl font-bold text-green-600">500 TND<span className="text-sm"> HT</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
                 <li className="flex gap-2">
                   <span className="text-green-600">✓</span>

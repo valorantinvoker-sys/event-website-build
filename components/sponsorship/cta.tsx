@@ -57,7 +57,7 @@ export function SponsorshipCTA() {
               <Mail className="h-5 w-5 text-charcoal" />
               <div className="text-left">
                 <p className="text-xs text-gray-medium sm:text-sm">Email us</p>
-                <p className="text-sm font-medium text-charcoal sm:text-base">contact.marketingmed@gmail.com</p>
+                <p className="text-sm font-medium text-charcoal sm:text-base">contact@mmt.tn/events@mmt.tn</p>
               </div>
             </a>
             <a

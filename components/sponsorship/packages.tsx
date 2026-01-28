@@ -179,11 +179,8 @@ export function SponsorshipPackages() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* Pack Digital Presence */}
             <div
-              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-              style={{ transitionDelay: "0ms" }}
-            >
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md`}
+              >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Digital Presence</h3>
               <p className="mb-4 text-2xl font-bold text-green-600">500 TND<span className="text-sm"> HT</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
@@ -212,11 +209,8 @@ export function SponsorshipPackages() {
 
             {/* Pack IHEC Connect */}
             <div
-              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-              style={{ transitionDelay: "100ms" }}
-            >
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md`}
+              >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack IHEC Connect</h3>
               <p className="mb-4 text-2xl font-bold text-green-600">1,800 TND<span className="text-sm"> HT</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
@@ -241,11 +235,8 @@ export function SponsorshipPackages() {
 
             {/* Pack Bronze Winner */}
             <div
-              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-              style={{ transitionDelay: "200ms" }}
-            >
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md`}
+              >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Bronze Winner</h3>
               <p className="mb-4"><span className="text-2xl font-bold text-green-600">3,900 TND</span><span className="text-sm text-green-600"> HT</span><span className="ml-2 text-2xl font-bold text-green-600">+ 500 TND</span><span className="text-sm text-gray-medium"> (prize pool)</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
@@ -274,11 +265,8 @@ export function SponsorshipPackages() {
 
             {/* Pack Silver Winner */}
             <div
-              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-              }`}
-              style={{ transitionDelay: "300ms" }}
-            >
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md`}
+              >
               <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Silver Winner</h3>
               <p className="mb-4"><span className="text-2xl font-bold text-green-600">4,700 TND</span><span className="text-sm text-green-600"> HT</span><span className="ml-2 text-2xl font-bold text-green-600">+ 1,000 TND</span><span className="text-sm text-gray-medium"> (prize pool)</span></p>
               <ul className="space-y-2 text-sm text-gray-medium">
@@ -308,11 +296,8 @@ export function SponsorshipPackages() {
 
           {/* Pack Gold Winner - Full Width */}
           <div
-            className={`mt-8 rounded-xl border border-charcoal bg-charcoal p-8 text-white transition-all duration-500 ease-in-out ${
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            }`}
-            style={{ transitionDelay: "400ms" }}
-          >
+            className={`mt-8 rounded-xl border border-charcoal bg-charcoal p-8 text-white transition-all duration-500 ease-in-out`}
+            >
             <div className="grid gap-6 md:grid-cols-2">
               <div>
                 <h3 className="mb-2 text-2xl font-bold">Pack Gold Winner</h3>
@@ -543,7 +528,7 @@ export function SponsorshipPackages() {
           style={{ transitionDelay: "200ms" }}
         >
           <Image
-            src="/images/chatgpt-event-info.png"
+            src="/images/reduction.png"
             alt="Event Information"
             width={1200}
             height={600}

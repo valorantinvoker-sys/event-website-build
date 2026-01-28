@@ -33,7 +33,6 @@ export function Navbar() {
     { href: "#program", label: "Program" },
     { href: "#prizes", label: "Prizes" },
     { href: "#organizer", label: "Organizer" },
-    { href: "/sponsorship", label: "Sponsorship" },
   ]
 
   return (

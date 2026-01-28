@@ -18,10 +18,6 @@ const footerLinks = {
     { label: "Prizes", href: "#prizes" },
     { label: "Register", href: "#register" },
   ],
-  sponsors: [
-    { label: "Sponsorship Packages", href: "/sponsorship" },
-    { label: "Contact Us", href: "#" },
-  ],
 }
 
 export function Footer() {
@@ -108,7 +104,7 @@ export function Footer() {
                   className="flex items-center gap-2 text-off-white/70 transition-colors hover:text-[#00C9FF]"
                 >
                   <Mail className="h-4 w-4" />
-                  contact.marketingmed@gmail.com
+                  contact@mmt.tn
                 </a>
               </li>
               <li className="flex items-start gap-2 text-off-white/70">
@@ -117,18 +113,6 @@ export function Footer() {
               </li>
             </ul>
 
-            <div className="mt-6 space-y-3">
-              {footerLinks.sponsors.map((link) => (
-                <div key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-off-white/70 transition-colors hover:text-[#00C9FF]"
-                  >
-                    {link.label}
-                  </Link>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 

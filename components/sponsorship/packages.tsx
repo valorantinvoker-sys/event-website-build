@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import { Check, X, Star } from "lucide-react"
 
 const packages = [
@@ -532,6 +533,22 @@ export function SponsorshipPackages() {
               </tbody>
             </table>
           </div>
+        </div>
+
+        {/* ChatGPT Image Section */}
+        <div
+          className={`mt-16 rounded-2xl overflow-hidden border border-charcoal/10 shadow-md transition-all duration-700 ease-in-out ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
+          style={{ transitionDelay: "200ms" }}
+        >
+          <Image
+            src="/images/ChatGPT Image 28 janv. 2026, 02_15_22.png"
+            alt="Event Information"
+            width={1200}
+            height={600}
+            className="w-full h-auto object-cover"
+          />
         </div>
       </div>
     </section>

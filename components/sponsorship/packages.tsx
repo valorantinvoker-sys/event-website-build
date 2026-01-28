@@ -168,31 +168,218 @@ export function SponsorshipPackages() {
   }, [])
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative overflow-hidden bg-[#F5FAFD] px-4 py-12 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
-    >
-      <div className="mx-auto max-w-7xl">
-        {/* Section Header */}
-        <div
-          className={`mb-16 text-center transition-all duration-700 ease-in-out ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-          }`}
-        >
-          <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-charcoal">
-            Investment Options
-          </span>
-          <h2 className="mb-4 text-3xl font-bold text-charcoal sm:text-4xl">
-            Sponsorship Packages
-          </h2>
-          <p className="mx-auto max-w-2xl text-gray-medium">
-            All prices are in Tunisian Dinars (TND), excluding taxes (HT).<br />
-            <span className="font-semibold text-green-700">Toute confirmation avant le 3 février bénéficie d'une réduction de 15% sur le prix du pack.</span>
-          </p>
+    <>
+      {/* Packages Details Section */}
+      <section className="relative overflow-hidden bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {/* Pack Digital Presence */}
+            <div
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: "0ms" }}
+            >
+              <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Digital Presence</h3>
+              <p className="mb-4 text-2xl font-bold text-green-600">5,000 TND HT</p>
+              <ul className="space-y-2 text-sm text-gray-medium">
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Annonce officielle du partenariat sur nos réseaux sociaux (+22K Facebook, +4K Instagram, +3K LinkedIn)</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Logo sur les visuels officiels de l'événement</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Présence sur la signalétique in-site (press wall)</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Identification et tags réguliers dans nos stories</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Mention valorisante dans l'aftermovie officiel</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pack IHEC Connect */}
+            <div
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: "100ms" }}
+            >
+              <h3 className="mb-2 text-lg font-bold text-charcoal">Pack IHEC Connect</h3>
+              <p className="mb-4 text-2xl font-bold text-green-600">1,800 TND HT</p>
+              <ul className="space-y-2 text-sm text-gray-medium">
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Tous les avantages du Pack Digital Presence</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Stand physique de 2m x 2m</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Desk de 1m x 0,7m au sein de l'espace stand</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Distribution de flyers et/ou goodies</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pack Bronze Winner */}
+            <div
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: "200ms" }}
+            >
+              <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Bronze Winner</h3>
+              <p className="mb-4 text-2xl font-bold text-green-600">3,900 TND HT</p>
+              <ul className="space-y-2 text-sm text-gray-medium">
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Tous les avantages du Pack IHEC Connect</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Prise de parole à l'ouverture et fermeture</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Rôle de mentor</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Participation au jury</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Prix 3e place (500 TND TTC)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pack Silver Winner */}
+            <div
+              className={`rounded-xl border border-charcoal/10 bg-gradient-to-br from-[#E8F4FF] to-[#F5FAFD] p-6 transition-all duration-500 ease-in-out hover:shadow-md ${
+                isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+              }`}
+              style={{ transitionDelay: "300ms" }}
+            >
+              <h3 className="mb-2 text-lg font-bold text-charcoal">Pack Silver Winner</h3>
+              <p className="mb-4 text-2xl font-bold text-green-600">4,700 TND HT</p>
+              <ul className="space-y-2 text-sm text-gray-medium">
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Tous les avantages du Pack IHEC Connect</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Prise de parole + paneliste</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Animation d'une session de formation</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Rôle de mentor et jury</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-green-600">✓</span>
+                  <span>Prix 2e place (1,000 TND TTC)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Pack Gold Winner - Full Width */}
+          <div
+            className={`mt-8 rounded-xl border border-charcoal bg-charcoal p-8 text-white transition-all duration-500 ease-in-out ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+            style={{ transitionDelay: "400ms" }}
+          >
+            <div className="grid gap-6 md:grid-cols-2">
+              <div>
+                <h3 className="mb-2 text-2xl font-bold">Pack Gold Winner</h3>
+                <p className="mb-4 text-xl font-semibold text-[#00C9FF]">Statut exclusif de Challenge Owner</p>
+                <p className="text-4xl font-bold">8,900 TND HT</p>
+              </div>
+              <ul className="space-y-2 text-sm text-off-white/90">
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Challenge Owner - Partenaire principal de l'événement</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Stand premium 3m x 3m</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Signalétique premium circulante</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Tags et mentions privilégiés</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Présence spéciale aftermovie + interviews</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Prise de parole prioritaire + paneliste</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Mentorat et rôle de jury</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-[#00C9FF]">✓</span>
+                  <span>Prix 1ʳᵉ place (5,000 TND TTC)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* Comparison Table Section */}
+      <section
+        ref={sectionRef}
+        className="relative overflow-hidden bg-[#F5FAFD] px-4 py-12 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+      >
+        <div className="mx-auto max-w-7xl">
+          {/* Section Header */}
+          <div
+            className={`mb-16 text-center transition-all duration-700 ease-in-out ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          >
+            <span className="mb-4 inline-block text-sm font-semibold uppercase tracking-wider text-charcoal">
+              Investment Options
+            </span>
+            <h2 className="mb-4 text-3xl font-bold text-charcoal sm:text-4xl">
+              Sponsorship Comparison
+            </h2>
+            <p className="mx-auto max-w-2xl text-gray-medium">
+              All prices are in Tunisian Dinars (TND), excluding taxes (HT).<br />
+              <span className="font-semibold text-green-700">Toute confirmation avant le 3 février bénéficie d'une réduction de 15% sur le prix du pack.</span>
+            </p>
+          </div>
 
         {/* Mobile Cards View */}
-        <div className="grid gap-6 md:hidden">
+        <div className="grid gap-6 md:hidden mb-8">
           {packages.map((pkg, index) => (
             <div
               key={pkg.name}
@@ -330,5 +517,6 @@ export function SponsorshipPackages() {
         </div>
       </div>
     </section>
+    </>
   )
 }

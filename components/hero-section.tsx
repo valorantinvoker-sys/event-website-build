@@ -35,7 +35,7 @@ function CountdownTimer() {
   })
 
   useEffect(() => {
-    const targetDate = new Date("2026-02-13T09:00:00").getTime()
+    const targetDate = new Date("2026-02-14T09:00:00").getTime()
 
     const updateCountdown = () => {
       const now = new Date().getTime()
@@ -152,7 +152,7 @@ export function HeroSection() {
             <div className="flex items-center justify-center gap-2 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] sm:justify-start">
               <Calendar className="h-5 w-5 text-white" />
               <span className="text-base font-semibold sm:text-lg">
-                February 13-14, 2026
+                February 14-15, 2026
               </span>
             </div>
             <div className="flex items-center justify-center gap-2 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] sm:justify-start">
